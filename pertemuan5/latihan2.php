@@ -3,7 +3,7 @@
 Farhat Abdurachman Aldjaidi
 203040060
 https://github.com/FarhatA22/pw2021_203040060.git
-Pertemuan 5 - 11 Maret Februari 2021
+Pertemuan 5 - 11 Maret 2021
 Mempelajari Array
 */
 ?>
