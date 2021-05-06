@@ -3,8 +3,8 @@
 Farhat Abdurachman Aldjaidi
 203040060
 https://github.com/FarhatA22/pw2021_203040060.git
-Pertemuan 10 - 23 April 2021
-Tugas Besar
+Pertemuan 10 - 23 april  2021
+Membahas Tentang Koneksi & Insert Data
 */
 ?>
 
@@ -14,15 +14,15 @@ require 'functions.php';
 // cek apakah tombol tambah sudah ditekan
 if (isset($_POST['tambah'])) {
   if (tambah($_POST) > 0) {
-    echo "
-            <script>
-                alert('data berhasil ditambahkan!');
-                document.location.href = 'latihan3.php';
-            </script>";
+    echo "<script>
+            alert('data berhasil ditambahkan');
+            document.location.href = 'lat3.php';
+         </script>";
   } else {
     echo "data gagal ditambahkan!";
   }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +31,12 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Data Mahasiswa</title>
+  <title>Tambah data Mahasiswa</title>
+
 </head>
 
 <body>
-  <h3>Tambah Data Mahasiswa</h3>
+  <h3>Form tambah data mahasiswa</h3>
   <form action="" method="POST">
     <ul>
       <li>
@@ -69,7 +70,7 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           Gambar :
-          <input type="file" name="gambar" required>
+          <input type="text" name="gambar" required>
         </label>
       </li>
 

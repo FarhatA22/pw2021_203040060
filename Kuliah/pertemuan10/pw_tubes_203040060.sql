@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2021 at 08:17 AM
+-- Generation Time: May 06, 2021 at 01:51 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -64,24 +64,24 @@ INSERT INTO `garasi dut` (`Id`, `Merk`, `Nama`, `Warna`, `Harga`, `Jenis`, `Kond
 --
 
 CREATE TABLE `mahasiswa` (
-  `id` int(20) NOT NULL,
-  `img` varchar(50) NOT NULL,
-  `nrp` varchar(50) NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `jurusan` varchar(50) NOT NULL
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `nrp` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `jurusan` varchar(50) NOT NULL,
+  `gambar` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`id`, `img`, `nrp`, `nama`, `email`, `jurusan`) VALUES
-(1, 'imam.jpg', '203040066', 'Imam Faraz Aditya', 'imam123@gmail.com', 'Teknik Informatika'),
-(2, 'kobar.jpg', '203040061', 'Rizki Akbar Ramadhan', 'rizkikobar21@gmail.com', 'Ilmu Hukum'),
-(3, 'farhat.jpg', '203040060', 'Farhat Abdurachman Aldjaidi', 'farhataldjaidi@gmail.com', 'Teknik Informatika'),
-(4, 'ijal.jpg', '203040075', 'Muhammad Afrizal Fadillah', 'afrizal2121@gmail.com', 'Teknik Informatika'),
-(5, 'uji.jpg', '203040200', 'Muhammad Fauzi Abdillah', 'fauziabl@gmail.com', 'Aquakultur');
+INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALUES
+(1, 'Imam Faraz Aditya', '203040066', 'imam123@gmail.com', 'Teknik Informatika', 'imam.jpg'),
+(2, 'Rizki Akbar Ramadhan ', '203040061', 'rizkikobar21@gmail.com', 'Ilmu Hukum', 'kobar.jpg'),
+(3, 'Farhat Abdurachman Aldjaidi', '203040060', 'farhataldjaidi@gmail.com', 'Teknik Informatika', 'farhat.jpg'),
+(4, 'Muhammad Afrizal Fadillah', '203040075', 'afrizal2121@gmail.com', 'Teknik Informatika', 'ijal.jpg'),
+(5, 'Muhammad Fauzi Abdillah', '203040200', 'fauziabl@gmail.com', 'Aquakultur', 'uji.jpg');
 
 -- --------------------------------------------------------
 
@@ -133,6 +133,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `garasi dut`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `mahasiswa`
+--
+ALTER TABLE `mahasiswa`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
