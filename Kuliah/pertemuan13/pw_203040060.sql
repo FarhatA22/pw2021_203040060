@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Apr 2021 pada 15.10
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 8.0.1
+-- Generation Time: May 06, 2021 at 03:00 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pw_203040046`
+-- Database: `pw_203040060`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `mahasiswa`
+-- Table structure for table `mahasiswa`
 --
 
 CREATE TABLE `mahasiswa` (
@@ -37,18 +37,20 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `mahasiswa`
+-- Dumping data for table `mahasiswa`
 --
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALUES
-(1, 'Alif Luqman Hakim', '203040046', 'aliflhh@gmail.com', 'Teknik Informatika', 'alif.jpg'),
-(2, 'Bimo Resnu', '203040026', 'bimogt@gmail.com', 'Teknik Informatika', 'bimo.jpg'),
-(3, 'Dimas', '203040120', 'dimaspray@gmail.com', 'Teknik Informatika', 'dimas.jpg');
+(1, 'Imam Faraz Aditya', '203040066', 'imam123@gmail.com', 'Teknik Informatika', 'imam.jpg'),
+(2, 'Rizki Akbar Ramadhan ', '203040061', 'rizkikobar21@gmail.com', 'Ilmu Hukum', 'kobar.jpg'),
+(3, 'Farhat Abdurachman Aldjaidi', '203040060', 'farhataldjaidi@gmail.com', 'Teknik Informatika', 'farhat.jpg'),
+(4, 'Muhammad Afrizal Fadillah', '203040075', 'afrizal2121@gmail.com', 'Teknik Informatika', 'ijal.jpg'),
+(5, 'Muhammad Fauzi Abdillah', '203040200', 'fauziabl@gmail.com', 'Aquakultur', 'uji.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -58,45 +60,44 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(3, 'luqman', '$2y$10$5gMgrfRkdp5bpQLeK6j3yuyoVkKnHKCxzL4N.IpdVA3Uxv7wuyvsW'),
-(4, 'admin', '$2y$10$fH0FnEUMn08hHMWpfv/5rO3feKMQzR8Zykb/ynIPkcteYdRwwXX2m'),
-(5, 'hakim', '$2y$10$n/XvXOVS5xGOqKS60QfYGein0EiJIpKm0d/3b3IdOKMaAW6ZEgK3u');
+(9, 'aldjaidi', '$2y$10$AY5gLtP9/32wXBxwDXh6eevhoO6mOuzWlG2m9fLsjHMfdnhWv/WVu'),
+(10, 'farhat', '$2y$10$BW7LlfHS2.Xj7WyNFd8OL.OGxxFE2ilHnAk47TGqDOJ0rq/2Xmy7u');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `mahasiswa`
+-- Indexes for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `mahasiswa`
+-- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
