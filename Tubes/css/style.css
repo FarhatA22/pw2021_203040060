@@ -1,0 +1,18 @@
+body {
+    background-color: #a5d6a7;
+}
+table, tr, td, th, thead {
+    border: 1px solid black;
+}
+table {
+    margin: 20px;
+}
+.btn-small {
+    margin: 15px;
+}
+table {
+    margin: 20px;
+}
+tr {
+    width: 50%;
+}
