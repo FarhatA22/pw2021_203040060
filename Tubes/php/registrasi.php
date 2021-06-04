@@ -54,7 +54,7 @@ if (isset($_POST["register"])) {
                     <td><input type="password" name="password"></td>
                 </tr>
             </div>
-            <button type="submit" name=" register" class="waves-effect waves-light btn-small blue darken-2">REGISTER</button>
+            <button type="submit" name="register" class="waves-effect waves-light btn-small blue darken-2">REGISTER</button>
         </form>
     </div>
 </body>
