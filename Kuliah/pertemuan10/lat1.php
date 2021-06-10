@@ -10,7 +10,7 @@ Membahas Tentang Koneksi & Insert Data
 
 <?php
 // Koneksi ke DB dan Pilih Database
-$conn = mysqli_connect('Localhost', 'root', '', 'pw_tubes_203040060');
+$conn = mysqli_connect('Localhost', 'pw20060', '#Akun#203040060#', 'pw20060_203040060');
 
 // Query isi tabel mahasiswa
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
