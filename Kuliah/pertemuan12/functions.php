@@ -12,7 +12,7 @@ Membahas Tentang Login & Registrasi
 
 function koneksi()
 {
-  return mysqli_connect('Localhost', 'root', '', 'pw_203040060');
+  return mysqli_connect('Localhost', 'pw20060', '#Akun#203040060#', 'pw20060_pw_203040060');
 }
 
 function query($query)
