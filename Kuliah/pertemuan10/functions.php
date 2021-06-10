@@ -11,7 +11,7 @@ Membahas Tentang Koneksi & Insert Data
 <?php
 function koneksi()
 {
-  return mysqli_connect('Localhost', 'root', '', 'pw_tubes_203040060');
+  return mysqli_connect('Localhost', 'pw20060', '#Akun#203040060#', 'pw20060_203040060');
 }
 
 function query($query)

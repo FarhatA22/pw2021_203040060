@@ -8,7 +8,7 @@ Mempelajari Sintaks Dasar PHP
 */
 ?>
 
-<?php 
+<?php
 // Pertemuan 2 - PHP Dasar
 // Sintaks PHP
 
@@ -63,7 +63,44 @@ Mempelajari Sintaks Dasar PHP
 
 // Logika
 // &&, ||, ! 
-
 // $x = 30;
 // var_dump($x < 20 || $x % 2 == 0)
+
+// contoh PHP dalam HTML
+// contoh HTML dalam PHP
+
+$nama = "Farhat";
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar PHP</title>
+</head>
+
+<body>
+  <h1>Hallo, Selamat Datang <?php echo $nama; ?></h1>
+  <p><?php echo "ini adalah paragraf"; ?></p>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  <?php
+  echo "<h1>Farhat</h1>" //contoh html didalam php
+  ?>
+
+
+</body>
+
+</html>
