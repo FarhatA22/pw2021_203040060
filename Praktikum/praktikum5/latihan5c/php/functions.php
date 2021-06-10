@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 Farhat Abdurachman Aldjaidi
@@ -13,8 +13,9 @@ Praktikum Jum'at 10:00-11:00
 // fungsi untuk melakukan koneksi ke database
 function koneksi()
 {
-    $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "pw_tubes_203040060");
+    $conn = mysqli_connect("localhost", "pw20060", "#Akun#203040060#");
+    mysqli_select_db($conn, "pw20060_tubes_203040060");
+
 
     return $conn;
 }
@@ -50,8 +51,8 @@ function tambah($data)
 }
 function hapus($Id)
 {
-  $conn = koneksi();
-  mysqli_query($conn, "DELETE FROM `garasi dut` WHERE Id = $Id");
+    $conn = koneksi();
+    mysqli_query($conn, "DELETE FROM `garasi dut` WHERE Id = $Id");
 
-  return mysqli_affected_rows($conn);
+    return mysqli_affected_rows($conn);
 }
